@@ -1,0 +1,29 @@
+The student gets a division as per the following rules:
+
+Percentage above or equal to 60 - First division 
+Percentage between 50 and 59 - Second division 
+Percentage between 40 and 49 - Third division 
+Percentage less than 40 - Fail 
+Write a program to calculate the division obtained by the student
+
+hindi = float(input('ENTER MARKS : '))
+english = float(input('ENTER MARKS : '))
+math = float(input('ENTER MARKS : '))
+science = float(input('ENTER MARKS : '))
+history = float(input('ENTER MARKS : '))
+
+total = (hindi+english+math+science+history)
+
+per = total/5
+
+if hindi <= 40 or english <= 40 or math <= 40 or science <= 40 or history <= 40:
+	print('FAIL')
+else:
+	if per >= 60:
+		print('FIRST DIVISION')
+	elif per >= 50 and per <= 59:
+		print('SECOND DIVISION')
+	elif per >= 40 and per <= 49:
+		print('THIRD DIVISION')
+	else:
+		print('FAIL')
